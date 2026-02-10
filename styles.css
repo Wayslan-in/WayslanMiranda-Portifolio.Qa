@@ -345,40 +345,42 @@ margin: 0px;
 @media (max-width: 768px) {
 
     /* MENU */
-    .menu {
-        flex-direction: column;
-        gap: 15px;
-    }
 
-    .menu-centro {
-        flex-direction: column;
-        gap: 15px;
-    }
+    /* ===== MENU MOBILE ===== */
+.menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .menu-icones {
-        position: static;
-        margin-top: 10px;
-    }
+/* ESCONDE os links */
+.menu-centro {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
 
-    /* FOTO + TEXTO */
-    .cabecalho-container {
-        flex-direction: column;
-        gap: 25px;
-        padding-top: 120px;
-    }
+/* MOSTRA quando clicar */
+.menu-centro.ativo {
+    display: flex;
+}
 
-    .foto-perfil {
-        width: 200px;
-        height: 200px;
-    }
+/* MOSTRA o botão ☰ */
+.menu-mobile {
+    display: block;
+}
 
-    h1 {
-        font-size: 2rem;
-    }
+/* Ícones continuam à direita */
+.menu-icones {
+    position: static;
+}
 
-    .cabecalho-sub-titulo {
-        font-size: 1.1rem;
-    }
 
     /* EXPERIÊNCIA */
     .experiencia-caixa {
@@ -398,7 +400,7 @@ margin: 0px;
         min-width: 0; /* REMOVE o travamento de 900px */
         font-size: 14px;
         padding: 12px;
-        border-radius: 12px;
+        
     }
 
     .itens-contatos {
