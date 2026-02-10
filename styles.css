@@ -415,3 +415,11 @@ margin: 0px;
 
 }
 
+.menu-mobile {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
