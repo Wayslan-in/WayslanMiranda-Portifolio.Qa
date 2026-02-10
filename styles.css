@@ -157,7 +157,7 @@ body {
 .foto-perfil {
   width: 320px;
     height: 327px;
-    border-radius: 80%;
+    border-radius: 50%;
     border: 6px solid var(--primaria);
     box-shadow: 0 0 60px rgba(79, 70, 229, 0.5);
     object-fit: cover;  
@@ -312,7 +312,7 @@ margin: 0px;
     border-radius: 20px;
     background-color: #f9f9f9;
     width: 60%;
-    min-width: 900px; /*largura da caixa*/
+    min-width: 0px; /*largura da caixa*/
     margin: 0 auto;
     font-size: 25px; /*tamanho da letra dentro da caixa*/
     display: flex;
@@ -340,4 +340,76 @@ margin: 0px;
     box-shadow: 0 0 50px rgba(79, 70, 229, 0.50);
 }
 
+/* ===== AJUSTES PARA CELULAR ===== */
+/* ===== RESPONSIVIDADE REAL PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+    /* MENU */
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-centro {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-icones {
+        position: static;
+        margin-top: 10px;
+    }
+
+    /* FOTO + TEXTO */
+    .cabecalho-container {
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 120px;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1.1rem;
+    }
+
+    /* EXPERIÊNCIA */
+    .experiencia-caixa {
+        border: 10px solid var(--vidro);
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    /* PROJETOS */
+    .projetos {
+        padding: 3rem 1rem;
+    }
+
+    /* CONTATOS (AQUI ESTAVA O MAIOR ERRO) */
+    .caixa-contatos {
+        width: 90%;
+        min-width: 0; /* REMOVE o travamento de 900px */
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .itens-contatos {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+.itens-contatos span,
+.itens-contatos a {
+    font-size: 14px;
+}
+
+}
 

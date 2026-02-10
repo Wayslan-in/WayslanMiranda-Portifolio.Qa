@@ -3,12 +3,16 @@
 
 <head> <!--Configuração do site-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Wayslan Miranda | Portifólio QA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body> <!--Visual-->
+
+    <div class="menu-mobile" onclick="toggleMenu()">☰</div> <!--Menu com 3 barras/superior-->
+
 
    <nav class="navegacao">
     <ul class="menu">
@@ -113,6 +117,16 @@
                  </div>
             </section>
             
+                    <script>
+                         function toggleMenu() {
+                         document.querySelector(".menu-centro").classList.toggle("ativo");
+                        }
+                    </script>
 
 </body>
+
+
+
+
+
 </html>
