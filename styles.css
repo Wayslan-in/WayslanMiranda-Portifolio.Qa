@@ -4,11 +4,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box; 
-<<<<<<< HEAD
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-=======
-font-family: 'Courier New', Courier, monospace;
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 }
 
 html {
@@ -26,17 +22,11 @@ html {
 }
 
 body {
-<<<<<<< HEAD
     background:
         radial-gradient(circle at top left, #2563eb 0%, transparent 40%),
         radial-gradient(circle at bottom right, #1e3a8a 0%, transparent 40%),
         #000000;
     color: white;
-=======
-    /*background-color:var(--escuro) ;*/
-    background-color:var(--claro);
-    color: var(--maisescuro);
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
     padding-bottom: 150px; /* cria espaço no final da tela */
     
 }
@@ -47,18 +37,14 @@ body {
     width: 100%;
     z-index: 100;
     padding: 1.5rem;
-<<<<<<< HEAD
 
     display: flex;
     justify-content: space-between;
     align-items: center
-=======
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
     
 }
 
 .menu{
-<<<<<<< HEAD
     font-size: 15px;
     font-weight: bold;
     color: white;
@@ -85,53 +71,28 @@ ul {
 }
 
 
-=======
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 6rem;
-
-    align-items: center;
-    position: relative;
-}
-
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 .menu-link{
     text-decoration: none;
     color: var(--claro);
     font-weight: 550;
     position: relative;
     padding: 0.5rem 0;
-<<<<<<< HEAD
      right: 10px; 
     font-size: 1.3rem; 
    font-family:Arial, Helvetica, sans-serif;
-=======
-    font-size: 1.3rem; 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
     }
 
 .menu-centro {/* Centraliza só os links*/
     display: flex;
-<<<<<<< HEAD
     gap: 2rem;
     justify-content: center;
 }
 
 /*.menu-icones {Joga os ícones para o canto direito 
-=======
-    gap: 6rem;
-    margin: 0 auto;
-}
-
-.menu-icones {/* Joga os ícones para o canto direito */
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
     position: absolute;
     right: 30px;
     display: flex;
     gap: 40px;
-<<<<<<< HEAD
 }*/
 
 .icones-logo {
@@ -154,11 +115,6 @@ ul {
 
 
 .menu-link:after {/* after: depois before: antes */
-=======
-}
-
-.menu-link::after {/* after: depois before: antes */
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
     content: '';
     height: 2px;
     width: 0%;
@@ -182,7 +138,6 @@ ul {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 /*.grupo-icones {
     display: flex;
     align-items: center;
@@ -221,40 +176,6 @@ ul {
     font-size: 1.5rem;
     color:var(--claro);
     
-=======
-.grupo-icones {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* menor = mais juntas */
-    margin: auto; /* empurra os ícones para o canto direito */
-}
-
-.icone-nav:hover {
-    transform: scale(2.01);
-}
-
-.cabecalho-container{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*flex-direction: column;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
-            margin-bottom: 0.3px;
-}
-
-.cabecalho-texto{
-    text-align: center;
-    max-width: 1000px;
-}
-
-.cabecalho {
-    padding-top: 0.5px;
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 }
 
 .botao-cv{
@@ -275,7 +196,6 @@ ul {
     box-shadow: 0 0 25px rgba(79, 70, 229, 0.5);
 }   
 
-<<<<<<< HEAD
 /*.apresentacao{
     font-size: 2.2rem;
     color: #ffffff;
@@ -340,73 +260,6 @@ margin: 5px 0;
     color: #cfcfcf;
 }
 
-=======
-.apresentacao{
-    font-size: 2.2rem;
-    color: #9ca3af;
-    margin-bottom: 0.50px;
-    font-family:Arial;
-}
-
-.foto-perfil {
-  width: 320px;
-    height: 327px;
-    border-radius: 50%;
-    border: 6px solid var(--primaria);
-    box-shadow: 0 0 60px rgba(79, 70, 229, 0.5);
-    object-fit: cover;  
-
-            /*   object-fit: contain;  mostra a imagem inteira */
-    object-position: center 10%;   /* centraliza o rosto */
-}   
-
-h1{ /*cor da fonte Analista de Suporte TI | Help Desk | QA*/
-font-size: 3.5rem;
-color: var(--escuro);
-font-weight: bold;
-margin: 0px;
-}
-
-.cabecalho-sub-titulo{
-    font-size: 1.5rem;
-    color: var(--escuro);
-}
-
-/*Essas informações das experiencias*/
-
-.experiencia{
-    padding: 0.1rem;
-    color: var(--escuro);   
-}
-
-.experiencia-caixa{
-    padding: 0.2rem;
-    max-width: 850px;
-    margin: 0 auto;
-    border-radius: 16px;
-    border: 25px solid var(--vidro); /*quadrado/caixa da descrição*/
-    margin-bottom: 0px;
-    backdrop-filter: blur(10px);
-    text-align: center;
-    background: rgb(255, 255, 255);
-
-}
-
-.experiencia-titulo{
-    padding: 0.1rem;
-    color: var(--escuro); /*cor da fonte experiencia*/
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 2.5rem; /*tamanho da fonte experiencia*/
-}
-
-.experiencia-paragrafo{
-    text-align: center;
-    font-size: 1.3rem; /*tamanho da letra na caixa*/
-}
-
-/*Essas informações sõa dos Meus Projetos, das 3 imagens*/
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 
 .projetos{
     padding: 6rem 2rem;
@@ -458,11 +311,7 @@ margin: 0px;
 }
 
 .paragrafo-projetos{
-<<<<<<< HEAD
     color: rgba(204, 162, 162, 0.8);
-=======
-    color: rgba(12, 12, 12, 0.8);
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
     line-height: 1.25rem;  
 }
 
@@ -491,8 +340,7 @@ margin: 0px;
     outline: none;
 }
 
-<<<<<<< HEAD
-/* Card*/
+
 
 
 .experiencia {
@@ -613,54 +461,6 @@ margin: 0px;
     border-top: 1px solid rgba(255,255,255,0.1);
     margin-top: 80px;  /* aumenta a distância do "Contatos" */
   
-=======
-.contatos {
-    text-align: center;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* centraliza tudo na horizontal */
-    justify-content: center;
-}
-
-.titulo-contatos {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.caixa-contatos {
-    padding: 20px 40px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    background-color: #f9f9f9;
-    width: 60%;
-    min-width: 0px; /*largura da caixa*/
-    margin: 0 auto;
-    font-size: 25px; /*tamanho da letra dentro da caixa*/
-    display: flex;
-    justify-content: center;  /* centraliza conteúdo interno */
-}
-
-.itens-contatos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px; /* espaço entre email e linkedin */
-}
-
-.itens-contatos a { /*essa referencia aponta para <a> para ocultar o nome sublinhado*/
-    text-decoration: none;   /* tira a linha */
-    color: inherit;          /* mantém a mesma cor do texto */
-}
-
-.itens-contatos a:visited,
-.itens-contatos a:hover,
-.itens-contatos a:active {
-    text-decoration: none;
-    color: inherit;
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 0 50px rgba(79, 70, 229, 0.50);
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 }
 
 /* ===== AJUSTES PARA CELULAR ===== */
@@ -671,19 +471,12 @@ margin: 0px;
 
     /* ===== MENU MOBILE ===== */
 .menu {
-<<<<<<< HEAD
      justify-content: center;
     
-=======
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 }
 
 /* ESCONDE os links */
 .menu-centro {
-<<<<<<< HEAD
     position: fixed;
     top: 0;
     left: -260px;
@@ -696,34 +489,16 @@ margin: 0px;
     gap: 35px;
     transition: 0.3s ease;
     z-index: 1000;
-=======
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(15, 23, 42, 0.98);
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 0;
-    z-index: 999;
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 }
 
 /* MOSTRA quando clicar */
 .menu-centro.ativo {
-<<<<<<< HEAD
     left: 0;
-=======
-    display: none;
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 }
 
 /* MOSTRA o botão ☰ */
 .menu-mobile {
     display: block;
-<<<<<<< HEAD
     position: fixed;
     top: 18px;
     left: 20px;
@@ -731,8 +506,6 @@ margin: 0px;
     color: white;
     cursor: pointer;
     z-index: 1001;
-=======
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
 }
 
 /* Ícones continuam à direita */
@@ -781,26 +554,25 @@ margin: 0px;
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-.rodape {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    margin-top: 80px;  /* aumenta a distância do "Contatos" */
-  
-}
 
-/* Apenas para celular */
 @media (max-width: 768px) {
 
-    .foto-perfil {
-        margin-top: 70px; /* distância abaixo da navegação */
+    .cabecalho-container {
+        align-items: center;
+        padding-top: 120px;
+        padding-right: 0;
     }
 
-}
-=======
+    .foto-perfil {
+        position: relative;   /* tira o absolute */
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
->>>>>>> 9dc1323514cbc15c5622830daa058b22c37fe8b0
+    .cabecalho-texto {
+        margin-top: 0;
+        text-align: center;
+    }
+}
