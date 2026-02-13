@@ -1,0 +1,568 @@
+*{
+/*Essas informações do titulo*/
+
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+
+    scroll-behavior: smooth; /* scroll do mouse*/
+}
+
+:root { 
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisescuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255,0.1);
+}
+
+body {
+    background:
+        radial-gradient(circle at top left, #2563eb 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #1e3a8a 0%, transparent 40%),
+        #000000;
+    color: white;
+    padding-bottom: 150px; /* cria espaço no final da tela */
+    
+}
+
+.navegacao {
+    position: fixed;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    
+}
+
+.menu{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1.8px;
+    list-style: none;   /* remove as bolinhas */
+    padding: 0;
+    margin: 0;
+        font-family: 'Courier New', monospace;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.icone-logo {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+
+    filter: brightness(0) invert(1);
+}
+
+
+.menu-link{
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 550;
+    position: relative;
+    padding: 0.5rem 0;
+     right: 10px; 
+    font-size: 1.3rem; 
+   font-family:Arial, Helvetica, sans-serif;
+    }
+
+.menu-centro {/* Centraliza só os links*/
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/*.menu-icones {Joga os ícones para o canto direito 
+    position: absolute;
+    right: 30px;
+    display: flex;
+    gap: 40px;
+}*/
+
+.icones-logo {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.icone-logo {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icone-logo:hover {
+    transform: scale(1.2);
+}
+
+
+.menu-link:after {/* after: depois before: antes */
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after { /*quando colocar o mouse em cima*/
+    width: 80%;
+}
+
+.icone-nav { /* Referencia as duas imagens linkedin e github*/
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;   /* deixa redondo */
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/*.grupo-icones {
+    display: flex;
+    align-items: center;
+    gap: 15px; menor = mais juntas 
+    margin: auto; empurra os ícones para o canto direito
+}*/
+
+/*.icone-nav:hover {
+    transform: scale(2.01);
+}*/
+
+.cabecalho-container{
+   
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   /* joga tudo para a direita */
+    justify-content: flex-start;
+    padding-top: 140px;      /* espaço abaixo do menu */
+    padding-right: 80px;     /* distância da borda direita */
+    position: relative;
+}
+
+.cabecalho-texto{
+    text-align: right;
+    max-width: 600px;
+    margin-top: 219px;
+}
+
+.cabecalho {
+    padding-top: 10px;
+    
+}
+
+.cabecalho-sub-titulo{
+    font-size: 1.5rem;
+    color:var(--claro);
+    
+}
+
+.botao-cv{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: 0.3s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botao-cv:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.5);
+}   
+
+/*.apresentacao{
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 0.50px;
+    font-family:Arial;
+        text-align: right;
+
+}*/
+
+.foto-perfil {
+  width: 200px;
+    height: 207px;
+    border-radius: 50%;
+    border: 4px solid var(--primaria);
+    object-position: center 80%;
+
+    position: absolute;
+    top: 120px;
+    right: 80px;
+    box-shadow: 0 0 60px rgba(0, 102, 235, 0.9), 0 0 25px #00d4ff;
+    margin-bottom: 0px;  /* espaço entre foto e nome */
+}
+
+           
+
+h1{ /*cor da fonte Analista de Suporte TI | Help Desk | QA*/
+font-size: 1.5rem;
+color: var(--claro);
+font-weight: bold;
+margin: 5px 0;
+}
+
+.resumo {
+    padding: 40px 0 80px 4%;
+}
+
+/*40px → sobe o bloco (menos espaço em cima)
+
+8% → empurra da esquerda sem ficar grudado
+
+80px → mantém espaço embaixo*/
+
+.resumo-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.resumo-texto {
+    max-width: 600px;
+    margin-top: -250px;
+}
+
+.resumo-titulo {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.resumo-paragrafo {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cfcfcf;
+}
+
+
+.projetos{
+    padding: 6rem 2rem;
+}
+
+.projetos-caixa{ /*tamanho das imagens*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));    
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projetos-card{
+    background: rgba(255, 255, 225, 0.25);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease; /*linkado no .Projetos-card:hover*/
+    cursor: pointer; /*ao passar o mouse na imagem, aparede a maozinha*/
+}
+
+.projetos-titulos{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.projetos-card:hover{ /*mouse sobre a imagem e efeito da imagem*/
+    /*box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);*/
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 50px rgba(79, 70, 229, 0.50);
+}
+
+.projetos-imagem{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa-textos-projetos{ /*espaco font dentro da caixa imagem*/
+    padding: 0.8rem;
+}
+
+.paragrafo-projetos{
+    color: rgba(204, 162, 162, 0.8);
+    line-height: 1.25rem;  
+}
+
+/*Essas Informações do contato*/
+
+.info-projetos{
+    margin-bottom: 5px;
+}
+
+.campo-form{
+    width: 100%;
+}
+
+.campo-form:focus{
+    border-color: var(--secundaria);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.50);
+}
+
+.grupo-form{
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 225, 0.25);
+    border-radius: 8px;
+    color: var(--claro);
+    border: 1px solid var(--vidro);
+    outline: none;
+}
+
+/* Card*/
+
+
+.experiencia {
+    padding: 100px 8%;
+    position: relative;
+}
+
+/* Título */
+.experiencia-titulo {
+    font-size: 34px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* Linha vertical da timeline */
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #8c00ff, #00c3ff);
+    border-radius: 10px;
+}
+
+/* Cards */
+.card-exp {
+    background: rgba(20, 20, 30, 0.65);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(140, 0, 255, 0.35);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 0 25px rgba(100, 0, 255, 0.15);
+    transition: 0.35s ease;
+    position: relative;
+}
+
+/* Bolinha da timeline */
+.card-exp::before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: 28px;
+    width: 14px;
+    height: 14px;
+    background: #8c00ff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #8c00ff;
+}
+
+/* Hover elegante */
+.card-exp:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 0 40px rgba(100, 0, 255, 0.45);
+}
+
+/* Cargo */
+.card-exp h3 {
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+
+/* Empresa */
+.empresa {
+    color: #00c3ff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Texto */
+.card-exp p {
+    margin-top: 12px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Tags */
+.tags {
+    margin-top: 18px;
+}
+
+.tags span {
+    display: inline-block;
+    padding: 7px 14px;
+    margin: 6px 6px 0 0;
+    border-radius: 20px;
+    background: rgba(140, 0, 255, 0.15);
+    border: 1px solid rgba(140, 0, 255, 0.4);
+    color: #cbb6ff;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.tags span:hover {
+    background: #8c00ff;
+    color: white;
+}
+
+
+
+
+
+.rodape {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 80px;  /* aumenta a distância do "Contatos" */
+  
+}
+
+/* ===== AJUSTES PARA CELULAR ===== */
+/* ===== RESPONSIVIDADE REAL PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+    /* MENU */
+
+    /* ===== MENU MOBILE ===== */
+.menu {
+     justify-content: center;
+    
+}
+
+/* ESCONDE os links */
+.menu-centro {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+/* MOSTRA quando clicar */
+.menu-centro.ativo {
+    left: 0;
+}
+
+/* MOSTRA o botão ☰ */
+.menu-mobile {
+    display: block;
+    position: fixed;
+    top: 18px;
+    left: 20px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Ícones continuam à direita */
+.menu-icones {
+    position: static;
+}
+
+
+    /* EXPERIÊNCIA */
+    .experiencia-caixa {
+        border: 10px solid var(--vidro);
+        padding: 1rem;
+        margin: 0 10px;
+    }
+
+    /* PROJETOS */
+    .projetos {
+        padding: 3rem 1rem;
+    }
+
+    /* CONTATOS (AQUI ESTAVA O MAIOR ERRO) */
+    .caixa-contatos {
+        width: 90%;
+        min-width: 0; /* REMOVE o travamento de 900px */
+        font-size: 14px;
+        padding: 12px;
+        
+    }
+
+    .itens-contatos {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+.itens-contatos span,
+.itens-contatos a {
+    font-size: 14px;
+}
+
+}
+
+.menu-mobile {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.rodape {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 80px;  /* aumenta a distância do "Contatos" */
+
+   
+}
+
