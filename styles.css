@@ -562,7 +562,14 @@ margin: 5px 0;
     font-size: 14px;
     border-top: 1px solid rgba(255,255,255,0.1);
     margin-top: 80px;  /* aumenta a distância do "Contatos" */
-
-   
+  
 }
 
+/* Apenas para celular */
+@media (max-width: 768px) {
+
+    .foto-perfil {
+        margin-top: 70px; /* distância abaixo da navegação */
+    }
+
+}
